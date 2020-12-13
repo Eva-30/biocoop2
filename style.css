@@ -1,0 +1,103 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 767px){
+
+    header{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    header > img{
+        width: 80vw;
+        height: auto;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+
+
+    main > p > img{
+        height: 3rem;
+        width: auto;
+    }
+
+    main > p{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: solid black 1px;
+    }
+
+    footer a{
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 767px){
+    header{
+        text-align: center;
+        padding: 3rem;
+    }
+
+    header > img{
+        width: 30rem;
+        height: auto;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5rem;
+        text-align: center;
+    }
+
+
+    main > p > img{
+        height: 5rem;
+        width: auto;
+    }
+
+    main > p{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 1%;
+        right: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: solid black 1px;
+    }
+
+    footer a{
+        padding: 2rem;
+    }
+}
